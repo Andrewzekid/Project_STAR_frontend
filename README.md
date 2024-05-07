@@ -7,9 +7,9 @@ We have currently hosted:
 
 Instagram:
 <a href="https://www.instagram.com/projectstar_official/">
-<div width="64" height="64">
-![Instagram](https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/769b93c2-da32-40fd-a7ed-a04ad915cc7b)
-</div>
+
+<img width="64" alt="pstar3" src="https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/769b93c2-da32-40fd-a7ed-a04ad915cc7b">
+
 </a>
 
 This repository is the Frontend code for Project STAR - Hosted with AWS S3
