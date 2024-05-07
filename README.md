@@ -5,16 +5,16 @@ We have currently hosted:
 * 10 workshops hosted so far around the world
 * 15 members
 
-Instagram:
+This repository is the Frontend code for Project STAR.
+
+This project was made with Tailwind CSS and hosted with S3.
+
+
 <a href="https://www.instagram.com/projectstar_official/">
 
-<img width="64" alt="pstar3" src="https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/769b93c2-da32-40fd-a7ed-a04ad915cc7b">
+<img width="32" alt="pstar3" src="https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/769b93c2-da32-40fd-a7ed-a04ad915cc7b">
 
 </a>
-
-This repository is the Frontend code for Project STAR - Hosted with AWS S3
-This project was made with Tailwind CSS and hosted with S3
-
 ## Website Features
 * Home, About, Workshops, Signups, Blog, Interviews page
 
