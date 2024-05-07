@@ -12,8 +12,7 @@
 
 # Project_STAR_frontend
 Frontend code for Project STAR - Hosted with AWS S3
-Made with 
-link: projectstarofficial.com
+<a href="projectstarofficial.com">projectstarofficial.com</a>
 
 
 # Screenshots
