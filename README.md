@@ -22,6 +22,7 @@ This project was made with Tailwind CSS and hosted with S3.
 ## URL
 Our website can be seen at:
 <a href="projectstarofficial.com">projectstarofficial.com</a> 
+
 Note: as we recently changed our hosting service from GoDaddy to pure AWS for cost reduction,https and http links are still migrating. Please use projectstarofficial.com or look at screenshots for more info.
 
 ## Screenshots
