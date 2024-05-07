@@ -15,6 +15,7 @@ This project was made with Tailwind CSS and hosted with S3.
 <img width="32" alt="pstar3" src="https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/769b93c2-da32-40fd-a7ed-a04ad915cc7b">
 
 </a>
+
 ## Website Features
 * Home, About, Workshops, Signups, Blog, Interviews page
 
