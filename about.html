@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project STAR aims to provide speech therapy to stuttering children through dance. We host interactive workshops in dance studios all across japan. Join us today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./static/img/logo.png">
+    <link rel="stylesheet" href="./static/STAR/css/output.css">
+    <title>Project STAR | Home</title>
+
+</head>
+<style>
+    body {
+    --heading-color: #802BB1;
+    --sub-heading-color: #7C7891;
+    --text-color: #D1D7E0;
+}
+    .layer1 {
+        background-image: url("static/violettoblack2.svg");
+    }
+    
+    .layer2 {
+        background-image: url("static/tofootercolor.svg");
+    }
+    
+    .layer3 {
+        background-image: url("static/whitetoviolet.svg")
+    }
+    section {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 100vh;
+    }
+/* .two-at-a-time {
+  max-width: max-content;
+  width: auto;
+  word-wrap: break-word;
+} */
+</style>
+<body class="w-full overflow-x-hidden" style="background-color: #1f1d2c;">
+    <header class="fixed w-full shadow-lg z-20" style="background-color: rgb(255,255,255);" style="max-height: 100px;">
+        <nav class="mx-auto w-2/3 p-3 flex flex-row justify-between items-center">
+            <div class="brand-image h-full">
+                <img src="./static/img/logo.png" style="max-width: 72px; max-height: 72px; " alt="Project STAR Logo">
+            </div>
+            <ul class="justify-between items-center lg:space-x-12 hidden lg:flex nav-menu" >
+                <li class="nav-item"><a href="#" class="nav-link text-primary">Home</a></li>
+                <li class="nav-item"><a href="./about.html"  class="nav-link ">About</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./ws.html" class="nav-link">Workshop Schedule</a></li>
+                <li class="nav-item"><a href="./comingsoon.html" class="nav-link">Resources</a></li>
+                <li class="hidden sm:block">
+                    <div class="max-w-full relative select-none">
+                        <div id="dropdown" class="flex items-center justify-around p-1 cursor-pointer" class="background-color: #ffffff;">
+                        Support us
+                        <svg class="w-4 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>   
+                        </div>
+                        <div id="dropdownMenu" class="hidden absolute top-34 select-none">                 
+                            <ul class="max-w-full p-5 rounded-lg shadow-lg divide-y" style="background-color: #ffffff;">
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Donate</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Volunteer</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Partnerships</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="hamburger cursor-pointer md:hidden z-40">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="h-screen main-container translate-y-10 sm:translate-y-24" style=" color: #fff !important;">
+        <section id="project-overview" class="t-hidden">
+            <div>
+                <div class="overview-content text-center">
+                    <h5 class="text-base mb-1 sm:mb-4 text-secondary">Project Overview</h5>
+                    <h3 class=" text-2xl sm:text-3xl text-medium mb-4 sm:mb-8" style="font-family: 'Playfair Display', serif;">Our Mission</h3>
+                    <p class="text-sm text-center w-4/5 m-auto sm:text-base whitespace-pre-line sm:whitespace-normal sm:w-1/2">Project STAR aims to engage children of different ages from 8 to 10 with persistent stuttering, providing them with an opportunity to express themselves through movement in workshops. 
+
+                        Our workshops aim to create a supportive-safe space that encourages children to reconnect with themselves physically and mentally to gain confidence via dance, contact improvisation and artistic reflection.
+
+                        Through these workshops, we hope to help children understand the feelings of frustration and lack of confidence one with a persistent stutter may experience and learn to diffuse negative emotions healthily.
+    
+    
+                    </p>
+                </div>
+                <div class="hero-video mt-3 sm:mt-8">
+                    <video src="./static/Promotional Video.mp4" autoplay controls class="w-full sm:w-1/2" style="margin: auto; aspect-ratio: 16/9;"></video>
+                </div>
+            </section>
+            </div>
+            
+        <!-- <section id="team-overview" class="t-hidden h-auto p-6 w-full sm:w-1/2" style="color: var(--text-color); margin: auto;">
+            <div class="overview-content">
+                <h3 class="text-white text-2xl sm:text-3xl text-medium mb-6" style="font-family: 'Playfair Display', serif;">Our team</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 team-grid">
+                    <div class="team team-member t-hidden">
+                        <div class="flex flex-col items-center sm:block">
+                            <div class="mb-4 profile-img">
+                                <img src="./static/img/avatar_feiru.png" class="profile-img" alt="Feiru's avatar">
+                            </div>
+                            <h5 class="text-xl font-medium text-white mb-2" style="font-family: 'Playfair Display', serif;">Feiru Ma</h5>
+                            <small class="text-secondary text-base opacity-75">Team Leader</small>
+                        </div>
+                        
+                        <p class="text-base mt-4 whitespace-pre-line text-center sm:text-left">Feiru is the founder of Project STAR. She is in charge of the choreography of our workshops. 
+
+                        Feiru understands the difficulties children with a persistent stutter may face and strives to help alleviate the feelings of frustration and lack of confidence which often accompany a persistent stutter in those children.
+                        </p>
+                    </div>
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_miho.png" class="profile-img" alt="Miho's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Miho Asaoka</h5>
+                        <small class="text-secondary text-base opacity-75">Workshop Coordinator</small>
+                        <p class="text-base mt-4 whitespace-pre-line">Miho also works on the choreography for our workshops, as well as assisting in efforts to organize the workshops themselves.
+
+                            Primarily, she skillfully teaches workshop participants about dance and is an expert in breaking down a complicated dance routine into an intuitive one. </p>
+                    </div>
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_yebin.png" class="profile-img" alt="Yebin's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Yebin Lee</h5>
+                        <small class="text-secondary text-base opacity-75">Outreach Specialist</small>
+                        <p class="text-base mt-4 whitespace-pre-line">Yebin is responsible for spreading awareness about our project through social media and connecting us with external organizations
+                            so we can reach more volunteers for our workshops.
+
+                        </p>
+                    </div>
+                    
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_haruka.png" class="profile-img" alt="Haruka's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Haruka Nagayama</h5>
+                        <small class="text-secondary text-base opacity-75">Scientific Research Associate</small>
+                        <p class="text-base whitespace-pre-line">
+                            Haruka helps us prepare educational content in the form of informative presentations about stuttering 
+                            and connect us with external organizations who specialise in helping children who stutter.
+                        </p>
+                        <figure>
+                            <blockquote>
+                                <p class="text-base mt-4 whitespace-pre-line">"I joined Project STAR as this Project helps reach out to audience who stutter, 
+                                    an issue that is commonly misunderstood, to be able to be "cured" in a short - term. Stuttering is often easily overlooked despite it having severe effects. " 
+                                </p>
+                            </blockquote>
+                            <figcaption>— Haruka Nagayama</figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_fumie.jpg" class="profile-img" alt="Fumie's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Fumie Go</h5>
+                        <small class="text-secondary text-base opacity-75">Communications officer</small>
+                        <p class="text-base mt-4 whitespace-pre-line">Fumie helps Project STAR to grow and connect with a wider group of people as well as assisting in strengthening the significance of our workshops & activities.  </p>
+                            <figure>
+                                <blockquote>
+                                    <p class="text-base mt-4 whitespace-pre-line">"I wanted to participate in an organisation that advocates for people with difficulty communicating, 
+                                        and the way Project STAR works towards recognition of stuttering was attractive for me.""
+                                    </p>
+                                </blockquote>
+                                <figcaption>— Fumie Go</figcaption>
+                            </figure>    
+                    </div>
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_andrew.png" class="profile-img" alt="Andrew's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Andrew Wang</h5>
+                        <small class="text-secondary text-base opacity-75">IT Specialist</small>
+                        <p class="text-base mt-4 whitespace-pre-line">Andrew is in charge of the website design for Project STAR and assists the project in IT related areas. </p>
+                        <figure>
+                            <blockquote>
+                                <p class="text-base mt-4 whitespace-pre-line">"I joined Project STAR in order to use my skills in programming and IT to make a difference in the world. 
+                                    I am grateful to be able to work as a part of Project STAR, an organization that helps facilitate real change for those who stutter. "
+                                </p>
+                            </blockquote>
+                            <figcaption>— Andrew Wang</figcaption>
+                        </figure>    
+                    </div>
+                    <div class="team team-member t-hidden">
+                        <div class="mb-4 profile-img">
+                            <img src="./static/img/avatar_isara.png" class="profile-img" alt="Isara's avatar">
+                        </div>
+                        <h5 class="text-xl text-white mb-2" style="font-family: 'Playfair Display', serif;">Isara Moriya</h5>
+                        <small class="text-secondary text-base opacity-75">Nagano Branch Director</small>
+                        <p class="text-base mt-4 whitespace-pre-line">Isara is the director of our branch in Nagano. So far, she has helped us coordinate workshops bimonthly in Nagano.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section> -->
+        <main class="h-screen " >
+            <!-- <section id="hero" class="h-full video video1">
+              <div class="hero-heading h-full w-full flex flex-col items-center justify-center">
+                  <h1 class="text-3xl md:text-4xl text-black-5 block text-center mt-44 md:mt-0" style="font-family: 'Playfair Display', serif;">Nagano Workshop #2</h1>
+                  <video autoplay muted loop id="myVideo">
+                      <source src="./static/WorkshopNo2.MOV" type="video/mp4">
+                    </video>
+                  <a href="" class="no-underline text-base text-black-5 text-center brand-gradient transition ease-in-out delay-100 duration-300 hover:scale-110 hover:cursor-pointer md:block mt-8 p-3 shadow-lg" style="width: 240px;">Learn More</a>
+                   <div class="flex flex-col justify-center items-center space-y-12 md:flex-row md:space-x-10">
+                      <a href="./static/Project STAR.pdf" download class="no-underline text-base text-center brand-gradient transition ease-in-out delay-100 duration-300 hover:scale-110 md:block mt-12 p-3" style="width: 240px;">Download Our Proposal (English)</a>
+                      <a href="./static/プロジェクトスター.pdf" download class="no-underline text-base text-center brand-gradient transition ease-in-out delay-100 duration-300 hover:scale-110 md:block mt-12 p-3" style="width: 240px;">Download Our Proposal <br>(日本語)</a>
+                  </div> 
+              </div>
+          </section>  -->
+          
+          <section id="Workshop Map" class="h-full sm:h-auto z-10 py-4 sm:py-12 w-full" style="min-width: 100vw; transform: translateY(100px);">
+              <div class="flex flex-col w-full sm:justify-center items-center md:mt-12 mb-8">
+                  <div class="text-left w-5/6 flex flex-col items-center sm:block sm:w-1/2" >
+                      <h3 class="text-xl text-center sm:text-3xl break-normal font-semibold text-black-5">Meet the team</h3>
+                      
+                      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-4 sm:grid-rows-3 gap-3 space-y-5 py-10">
+
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                           <p  class="text-mobile"class="text-mobile">Andrew is a 16-year-old from Tokyo who is passionate about computer science and using technology to change the world. 
+                                    He joined Project STAR to combine technology and dance to empower individuals with stutters worldwide. 
+                                    Andrew is in charge of creating the website for project STAR to spread the project to more individuals.
+                                </p>
+                            </div>   
+                            <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/team/Andrew Headshot.jpeg"></image>
+                            <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                <h5 class="text-black-5 text-xl mt-6">Andrew. W</h5>
+                                <span class="text-black-25 mt-4 text-base capitalize">IT leader</span>
+                                <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                            </div>
+                        </div>
+                        </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p  class="text-mobile"class="text-mobile">Feiru is a 17-year-old student based in Tokyo, Japan. 
+                                      She is a passionate social advocate and dancer and founded Project STAR after experiencing a stutter while growing up. 
+                                      She firmly believes that dance is a universal language that can help empower and bring people together and hopes that she can apply this philosophy to the Project STAR community. </p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/team/IMG_7528.png"></image>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Feiru. M</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Project leader</span>
+                                  <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                              </div>
+                              </div>
+                          </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p class="text-mobile">Fumie is a 17-year-old student from Tokyo, Japan. 
+                                      She aspires to be an engineer who develops devices to improve the quality of people’s lives. 
+                                      She believes all communities should be inclusive and therefore wants to raise awareness about stuttering by being a scientific research associate at Project STAR.</p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/team/IMG_2243.png"></image>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Fumie. G</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Communications officer</span>
+                                  <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                              </div>
+                              </div>
+                          </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p class="text-mobile">Haruka is a 17-year-old student from Tokyo, who is passionate about scientific research and aims to become a doctor in the future. 
+                                      She is a member of Project STAR and is the scientific research associate of the team, often taking part in delivering information about stuttering. 
+                                      She enjoys researching and creating content to raise awareness about the science behind stuttering. 
+                                      </p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/team/Project STAR self photo headshot.jpg"></image>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Haruka. N</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Social Media officer</span>
+                                  <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                              </div>
+                              </div>
+                          </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p class="text-mobile">Isara is a 17-year-old senior in high school based in Nagano, Japan. She is dedicated to ballet and social advocacy.
+                                       Project STAR was the perfect platform to combine those two interests, which led her to become a branch director in Nagano. 
+                                       Isara hopes to connect people of various abilities and ages through the healing art of dance.</p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/team/IMG_0881.JPG"></image>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Isara. M</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Nagano Branch Director</span>
+                           
+                              </div>
+                              </div>
+                          </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p class="text-mobile"> Miho is a 17-year-old residing in Tokyo who is passionate about dance. 
+                                      With a background in ballet, Miho joined Project STAR to harness her dance and communication skills to provide support and empowerment to individuals with stutters through the universal language of movement.
+                                  </p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-24 h-24" src="static/img/avatar_miho.png"></image>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Miho. A</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Choreographer</span>
+                                  <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                              </div>
+                              </div>
+                          </div>
+                          <div class="p-6 flex flex-col items-center relative group"><div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                  <p class="text-mobile">Yebin is a 17-year-old from Tokyo who is passionate about film and aims to become a director. She is dedicated to creating social media content and facilitating Project STAR workshops. She joined Project STAR to spread greater awareness about stuttering, especially through the unifying power of social media. </p>
+                              </div>   
+                              <div class="flex flex-col items-center relative"><image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100 rounded-full w-28 h-28 z-10" src="static/img/team/Yebin!! .jpg"></image></div>
+                              <div class="text-center opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                  <h5 class="text-black-5 text-xl mt-6">Yebin. L</h5>
+                                  <span class="text-black-25 mt-4 text-base capitalize">Outreach Specialist</span>
+                                  <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                              </div>
+                              </div>
+                          
+                          <div class="p-6 flex flex-col items-center relative group">
+                              <div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                    <p class="text-mobile"> Valien, a 16-year-old based in Beijing, is deeply passionate about communication and dance therapy. With an interest in education, she serves as the Branch Director for Project STAR in China.
+                                       Valien aspires to make a meaningful impact within Project STAR by combining their love for education and dance therapy.</p>
+                                </div>   
+                                <div class="flex flex-col items-center relative group">
+                                    <image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100  rounded-full w-24 h-24" src="static/img/team/Valien.jpg"></image>
+                                    <div class="text-center  opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                        <h5 class="text-black-5 text-xl mt-6">Valien</h5>
+                                        <span class="text-black-25 mt-4 text-base capitalize">Beijing Branch Director</span>
+                                        <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="p-6 flex flex-col items-center relative group">
+                              <div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                    <p class="text-mobile">Rinka is an 18-year-old high school junior based in Tokyo, Japan, and Massachusetts, U.S. 
+                                      She aspires to be a social media manager and is passionate about connecting people with various backgrounds through social media. 
+                                      She joined Project STAR to spread about stuttering using the power of social media and works as a director of the social media team. 
+  
+                                    </p>
+                                </div>   
+                                <div class="flex flex-col items-center relative group">
+                                    <image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100  rounded-full w-24 h-24" src="static/img/team/Rinka headshot.HEIC"></image>
+                                    <div class="text-center  opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                        <h5 class="text-black-5 text-xl mt-6">Rinka</h5>
+                                        <span class="text-black-25 mt-4 text-base capitalize">Marketing Specialist</span>
+                                        <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                                    </div>  
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="p-6 flex flex-col items-center relative group">
+                              <div class="text-center opacity-0 absolute p-4 top-0 left-0 transition ease-in-out duration-300 delay-100 w-full z-10 group-hover:opacity-100" style="background-color: #7971AB;">
+                                    <p class="text-mobile">Nao is a 16-year-old student from Tokyo, Japan, who is passionate about graphic design. 
+                                      She joined Project STAR to spread awareness about stuttering and enhance her design skills through creating posts on Project STAR’s Instagram page.
+  
+                                    </p>
+                                </div>   
+                                <div class="flex flex-col items-center relative group">
+                                    <image class="group-hover:opacity-0 transition ease-in-out duration-300 delay-100  rounded-full w-24 h-24" src="static/img/team/Project STAR Headshot - Nao.jpg"></image>
+                                    <div class="text-center  opacity-100 transition ease-in-out duration-300 delay-100 group-hover:opacity-0">
+                                        <h5 class="text-black-5 text-xl mt-6">Nao Tsukamoto</h5>
+                                        <span class="text-black-25 text-base capitalize">Social media manager</span>
+                                        <!-- <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem?</p> -->
+                                    </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+                  
+          </div>
+          </section>
+          
+
+        <footer class="bg-black-100 static mt-48">
+            <div class="footer-container mx-auto w-2/3 flex flex-col items-center md:space-y-12 md:flex-row md:justify-between md:divide-x p-12">
+                <div class="footer-item-1 flex flex-col justify-between items-center p-5 grow ">
+                    <img src="./static/img/logo.png" class="w-16 h-16 md:w-32 md:h-32" alt="">
+                    <div class="text-black-5 mt-5 md:ml-14 w-screen md:w-auto flex justify-center items-center">
+                        <ul class="w-2/3 md:w-full">
+                            <li>Phone number: 070-8908-1112</li>
+                            <li>Email: connectprojectstar@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer-item-2 grow flex-col items-center justify-evenly p-5 mb-4 hidden md:flex">
+                    <h4 class="text-2xl text-black-5 mr-20" style="font-family: 'Playfair Display', serif;">Sitemap</h4>
+                    <div class="text-black-5 mt-5 hidden md:block">
+                        <ul class="flex flex-row items-center justify-center space-x-8">
+                            <div>
+                                <li>- <a href="./Nagano1.html">Nagano Workshop #1</a></li>
+                                <li>-<a href="./Nagano2.html">Nagano Workshop #2</a></li>
+                                <li>- <a href="./ws.html">Workshop Schedule</a></li>
+                                <li>- <a href="./Tokyo1.html">Tokyo Workshop</a></li>
+                                <li>- <a href="./comingsoon.html">About</a></li>
+                            </div>
+                            <div>
+                                <li>- <a href="./comingsoon.html">Events</a></li>
+                                <li>- <a href="#">Home</a></li>
+                                <li>-<a href="./Nagano2.html">Nagano Workshop #2</a></li>
+                                <li>- <a href="./comingsoon.html">Support us</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-700 w-full hidden md:block p-8">
+                <h5 class="text-base text-black-5 mx-auto text-center">Copyright &copy; Project STAR 2022. All rights reserved</h5>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="./static/STAR/js/dropdown.js"></script>
+    <script src="./static/STAR/js/scroll.js"></script>
+    <script src="./static/STAR/js/hamburger.js"></script>
+</body>
+</html>

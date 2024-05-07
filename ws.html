@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project STAR aims to provide speech therapy to stuttering children through dance. We have hosted 2 workshops with our partners in Nagano, and are excited to announce our upcoming workshop in Tokyo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./static/img/logo.png">
+    <link rel="stylesheet" href="./static/STAR/css/output.css">
+    <title>Project STAR | Workshop Schedule</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .timeline {
+        margin: 5em auto;
+        max-width: 34.15em;
+    }
+    .checkpoint {
+        max-width: 34em;
+        padding-top: 2em;
+        padding-bottom: 2em; 
+        position: relative;
+    }
+    .checkpoint p {
+        line-height: 27px;
+        color: #fff;
+    }
+    .checkpoint div {
+        border: 2px solid #27222f;
+        background-color: #27222f;
+        border-radius: 1em;
+        padding: 1.5em;
+        }
+    .checkpoint:nth-child(odd) {
+        border-left: 3px solid #b680c0;
+        padding-left: 3em;
+        transform: translateX(16.835em);
+    }
+    .checkpoint:nth-child(even) {
+        border-right: 3px solid #b680c0;
+        padding-right: 3em;
+        transform: translateX(-17em);
+    }
+    .checkpoint:nth-child(even).done,
+    .checkpoint:nth-child(odd).done {
+        border-color: #31064F;
+    }
+
+    .checkpoint:nth-child(odd)::before,
+    .checkpoint:nth-child(even)::before {
+        content: "";
+        background: #b680c0;
+        width: 3em;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .done.checkpoint:nth-child(odd)::before,
+    .done.checkpoint:nth-child(even)::before {
+        background: #31064F;
+    }
+    .checkpoint:nth-child(odd)::before {
+        left: 0;
+    }
+    .checkpoint:nth-child(even)::before {
+        right: 0;
+    }
+    .checkpoint:nth-child(even) div::before,
+    .checkpoint:nth-child(odd) div::before {
+        content: "";
+        background:#a080b6;
+        
+        width: 0.8em;
+        height: 0.8em;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        border-radius: 50%;
+    }
+    .checkpoint:nth-child(even).done div::before,
+    .checkpoint:nth-child(odd).done div::before {
+        background: #500B82;
+        box-shadow: 0 0 0.5em #500B82;
+    }
+    .checkpoint:nth-child(odd) div::before {
+        left: -0.5em;
+    }
+    .checkpoint:nth-child(even) div::before {
+        right: -0.5em;
+    }
+    @media screen and (max-width: 1150px) {
+        .timeline {
+            width: 80vw;
+        }
+        .timeline .checkpoint {
+            width: 100%;
+            transform: none;
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+        }
+        .timeline .checkpoint::before {
+            width: 3px;
+            height: 4em;
+            top: -2em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline .checkpoint div::before {
+            top: -0.5em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+</style>
+<body style="background-color: #120f1c;">
+    <header class="fixed w-full shadow-lg z-20" style="background-color: rgb(255,255,255);" style="max-height: 100px;">
+        <nav class="mx-auto w-2/3 p-3 flex flex-row justify-between items-center">
+            <div class="brand-image h-full">
+                <img src="./static/img/logo.png" style="max-width: 72px; max-height: 72px; " alt="Project STAR Logo">
+            </div>
+            <ul class="justify-between items-center lg:space-x-12 hidden lg:flex nav-menu" >
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html"  class="nav-link ">About</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./ws.html" class="nav-link">Workshop Schedule</a></li>
+                <li class="nav-item"><a href="./comingsoon.html" class="nav-link">Resources</a></li>
+                <li class="hidden sm:block">
+                    <div class="max-w-full relative select-none">
+                        <div id="dropdown" class="flex items-center justify-around p-1 cursor-pointer" class="background-color: #ffffff;">
+                        Support us
+                        <svg class="w-4 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>   
+                        </div>
+                        <div id="dropdownMenu" class="hidden absolute top-34 select-none">                 
+                            <ul class="max-w-full p-5 rounded-lg shadow-lg divide-y" style="background-color: #ffffff;">
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Donate</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Volunteer</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary transition duration-300" href="./comingsoon.html">Partnerships</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="hamburger cursor-pointer md:hidden z-40">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="overflow-x-hidden"  style="position: relative; top: 35px;">
+        <div class="timeline">
+            <h3 class="font-semibold text-3xl text-black-5 text-center w-fit m-auto my-20">Our Workshop Schedule</h3>
+            <div class="checkpoint done" onclick="window.location.href='./Nagano1.html'">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #1</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">Nov 21st, 2022</small>
+                    <p>In November, we hosted our first ever workshop in our Nagano Branch! This workshop featured our first implementation of contact improvisation.</p>
+                </div>
+            </div>
+            <div class="checkpoint done" onclick="window.location.href='./Nagano2.html'">
+                <div  class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #2</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">Jan 23rd, 2023</small>
+                    <p>In January 2023, we hosted our second Nagano workshop. Thank you to all of those people who attended both of our Nagano workshops!</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #4</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">May 26th, 2023</small>
+                    <p>On May 26th, we hosted our 4th workshop in Nagano!
+                        In this workshop, we taught a new choreography with a new song, and received wonderful feedback from our participants.
+                        We would like to thank the participants once again and we look forward to hosting more workshops soon!</p>
+                </div>
+            </div>
+            <div class="checkpoint done" onclick="window.location.href='./Tokyo1.html'">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Tokyo Workshop #1</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">May 27th, 2023</small>
+                    <p>On May 27th, we had the honor of hosting our first workshop in Tokyo with our members and other volunteers! We are beyond excited to share the choreography and footage in the workshop!
+                        Stay tuned for more updates about our workshops</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #5</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">July 28th, 2023</small>
+                    <p>On July 28th, we hosted our 5th workshop in Nagano.
+                        We are incredibly grateful for the repeating participants and would like to thank everyone for the support!
+                        Stay tuned for our next workshop!</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #6</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">September 18th, 2023</small>
+                    <p>On September 18th, we hosted our 6th workshop in Nagano.
+                        We are incredibly grateful for the repeating participants and would like to thank everyone for the support!
+                        Stay tuned for our next workshop!</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Beijing Workshop #1</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">November 29th, 2023</small>
+                    <p>On November 29th, we hosted our 1st workshop in Beijing. Thank you so much to those who joined us🤍
+                        Stay tuned for our next workshop!</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Massachusetts Workshop #1</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">Febuary 2nd, 2024</small>
+                    <p>On February 2nd, we hosted our 1st workshop in Massachusetts.
+                        The participants learned about stuttering and enjoyed dancing together. Thank you so much to those who joined us🤍</p>
+                </div>
+            </div>
+            <div class="checkpoint done">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Nagano Workshop #7</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">January 16th, 2024</small>
+                    <p>Our first workshop of the year was held on January 16th in Nagano.
+                        We are incredibly grateful for the repeating participants and would like to thank everyone for the support!</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div class="group hover:bg-violet-900 hover:cursor-pointer">
+                    <h2 class="text-black-5 font-medium text-base">Our workshops so far</h2>
+                    <small class="text-black-50 text-sm group-hover:text-violet-300">10 workshops hosted in total!</small>
+                </div>
+            </div>
+            
+                
+        </div>
+        <footer class="bg-black-100 static">
+            <div class="footer-container mx-auto w-2/3 flex flex-col items-center md:space-y-12 md:flex-row md:justify-between md:divide-x p-12">
+                <div class="footer-item-1 flex flex-col justify-between items-center p-5 grow ">
+                    <img src="./static/img/logo.png" class="w-16 h-16 md:w-32 md:h-32" alt="">
+                    <div class="text-black-5 mt-5 md:ml-14 w-screen md:w-auto flex justify-center items-center">
+                        <ul class="w-2/3 md:w-full">
+                            <li>Phone number: 070-8908-1112</li>
+                            <li>Email: connectprojectstar@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer-item-2 grow flex-col items-center justify-evenly p-5 mb-4 hidden md:flex">
+                    <h4 class="text-2xl text-black-5 mr-20" style="font-family: 'Playfair Display', serif;">Sitemap</h4>
+                    <div class="text-black-5 mt-5 hidden md:block">
+                        <ul class="flex flex-row items-center justify-center space-x-8">
+                            <div>
+                                <li>- <a href="./Nagano1.html">Nagano Workshop #1</a></li>
+                                <li>-<a href="./Nagano2.html">Nagano Workshop #2</a></li>
+                                <li>- <a href="./ws.html">Workshop Schedule</a></li>
+                                <li>- <a href="./Tokyo1.html">Tokyo Workshop</a></li>
+                                <li>- <a href="./comingsoon.html">About</a></li>
+                            </div>
+                            <div>
+                                <li>- <a href="./comingsoon.html">Events</a></li>
+                                <li>- <a href="./home.html">Home</a></li>
+                                <li>-<a href="./Nagano2.html">Nagano Workshop #2</a></li>
+                                <li>- <a href="./comingsoon.html">Support us</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-700 w-full hidden md:block p-8">
+                <h5 class="text-base text-black-5 mx-auto text-center">Copyright &copy; Project STAR 2022. All rights reserved</h5>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./static/STAR/js/dropdown.js"></script>
+    <script src="./static/STAR/js/hamburger.js"></script>
+</body>
+</html>

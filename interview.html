@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project STAR aims to provide speech therapy to stuttering children through dance. We host interactive workshops in dance studios all across japan. Join us today!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./static/img/logo.png">
+    <link rel="stylesheet" href="./static/STAR/css/output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <title>Project STAR | Home</title>
+
+</head>
+<style>
+body {
+    --heading-color: #802BB1;
+    --text-color: #D1D7E0;
+}
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 300px;
+
+}
+
+.layer1 {
+    background-image: url("static/violettoblack2.svg");
+}
+
+.layer2 {
+    background-image: url("static/tofootercolor.svg");
+}
+
+.layer3 {
+    background-image: url("static/whitetoviolet.svg")
+}
+
+@media only screen and (max-width: 678px) {
+    .brand-image img {
+        width:36px;
+        height: 36px;
+    }
+
+}
+
+#myVideo {
+    position: absolute;
+    left: 0;
+    top: 1;
+    z-index: -1;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+#hero {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.heading {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.heading::after {
+    content: ' ';
+    position: absolute;
+    bottom: -15px;
+    margin-top: 10px;
+    left: 0; 
+    height: 2px;
+    width: 50px;
+    background-color: #500B82;
+}
+
+
+/* .two-at-a-time {
+  max-width: max-content;
+  width: auto;
+  word-wrap: break-word;
+} */
+</style>
+<body >
+    <header class="fixed w-full shadow-lg" style="background-color: rgb(255,255,255);">
+        <nav class="mx-auto w-2/3 p-3 flex flex-row justify-between items-center">
+            <div class="brand-image h-full">
+                <img src="./static/img/logo.png" style="max-width: 72px; max-height: 72px; " alt="Project STAR Logo">
+            </div>
+            <ul class="justify-between items-center space-x-12 hidden md:flex">
+                <li><a href="./comingsoon.html" class="text-primary">Home</a></li>
+                <li><a href="./comingsoon.html">About</a></li>
+                <li><a href="./Tokyo1.html">Tokyo Workshop</a></li>
+                <li><a href="./comingsoon.html">Workshop Schedule</a></li>
+                <li><a href="./Nagano1.html">Nagano Workshop #1</a></li>
+                <li>
+                    <div class="max-w-full relative select-none" id="dropdownbar">
+                        <div id="dropdown" class="flex items-center justify-around p-1 cursor-pointer" class="background-color: #ffffff;">
+                        Support us
+                        <svg class="w-4 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>   
+                        </div>
+                        <div id="dropdownMenu" class="hidden absolute top-34 select-none">                 
+                            <ul class="max-w-full p-5 rounded-lg shadow-lg divide-y" style="background-color: #ffffff;">
+                                <li class="px-2 py-2"><a class="hover:text-primary" href="./comingsoon.html">Donate</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary" href="./comingsoon.html">Volunteer</a></li>
+                                <li class="px-2 py-2"><a class="hover:text-primary" href="./comingsoon.html">Partnerships</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="p-8">
+        <div class="bg-white p-4 rounded-lg py-8 mt-12">
+            <h4 class="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">Interview</h4>
+            <p class="text-center text-gray-600 text-sm mt-2">Interviews with a Stuttering Advocate</p>
+            <div class="flex justify-center items-start my-2">
+        <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+          <h2 class="text-xl font-semibold text-vnet-blue mb-2">Interview with Priya (@stutterconversation)</h2>
+          <ul class="flex flex-col">
+            <li class="bg-white my-2" x-data="accordion(1)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>1. Please give us a quick self-introduction (name, what you do, favorite hobby, etc)
+                </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                x-ref="tab"
+                :style="handleToggle()"
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+              >
+                <p class="p-3 text-gray-900">
+                    My name is Priya. I'm the creator and I guess host of @stutterconversation and the podcast as well. 
+                    I just finished high school, so I'm sort of in my break between school and maybe uni next year and favorite hobby. 
+                    I've kind of been into crocheting recently so I guess that's for my hobby at the moment. I've tried like knitting and I've like made my own scarf and stuff.  just like a few little animals, so yeah, They're pretty fun.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(2)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>2. Can you share a little about your personal relationship and journey with stuttering?                </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                    So I think now my relationship with stuttering is quite strong. I guess it's positive and negative, but I think because I've learned I've sorry I've spoken to so many different people because of the page, so having the starter has been able to. I've been able to connect with so many people and that's something that I wouldn't have done without having a start. So I guess it sort of goes hand in hand. But I think my my journey with it is getting there where it's slowly. But surely I think the more I sort of immerse myself into staggering, the more I understand about it and the more I build a better relationship with it, that's not really, you know, filled with anger about the DA. So yeah, its I think the more I learn about it and I think also it's more of like an internal battle, because for me my ST isn't as prominent as other people. And so there's always this sort of internal battle of like guilt. So asta having such a page about it. I sort of think, oh, like I don't know if I'm the right person to be talking about it, because my ST is not as prominent and I may not have. 
+                    Some of the experiences that a lot of other people do with stuttering, but I think it's also more that I have to just likes stop invalidating my experiences with it and understanding that everyone's journey with startering is their own and it's unique. But the experiences are what make I guess the start, so yeah, it's we're getting there, we'll just say that right. Yeah. I think what you're doing right now, it, it's not something that everyone challenges themselves to do. And so it's very impressive. 
+                </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(3)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>3. When did you first notice that you had a stutter and how did it shape your personal life. 
+                </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                    Oh, that's a good question. I think I didn't really notice it up until maybe six or seven years ago, so it's pretty recent. But I was actually my preschool teacher that noticed it and informed my mom that I probably should get checked by a speech pathologist so that was when I was around four or five. But I think it really started to bother me and I started to understand that I hadn't start out when I was in year seven. My mom actually told me that I used to come up to her and tell her that oh like why do I speak like that or my friends have been asking me questions about how I speak. So I guess you could probably say to that. But personally I would say year seven which is like beginning of high school. 
+
+                    So like 12, 13 years old and I really started to bother me because when I started making friends. I was a lot more self-conscious about it. And yeah, that started to feel a lot of other issues like anxiety and that sort of thing. But yeah, it's really shape my life because I've just it was more like I noticed it more and I became a bit more closed off and yeah, really selfware about it and I didn't accept opportunities that I should have accepted when I was in high school, so I guess that was sort of it. I think that's also why I'm so passionate about, you know, talking about the teen experience because you don't see it very much often with startttering. And if's anything, it's usually just like an overwhelm. Sorry, it's usually like a story that is. 
+                    
+                    What I call it. It's like the overcoming story, which is not how it is for a majority of people who start off. So yeah, that's sort of how it really impacted me. Right, yeah, i think studying, it's something that, yeah, as you said, it's something that you don't really notice until you maybe talk to someone or you. It's not like an explicit, very like diagnosis or illness. Ye. So I think maybe for some people could be harder to understand or empathize, and that's really sad. But it seems that your family is very supportive of it. And that's one, yeah, exactly, my sisters actually become a spacepoogist as well. So I definitely I surrounded about it a lot. Yeah, that's amazing.
+                    
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(4)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>4. Are there particularly memorable or interesting experiences you had as a person who starts and as a stuttering advocate. 
+                </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                    Yeah so the main experience that I sort of always talk about is when I was in year seven and I had to do a speech which obviously is incredibly scary but having a start on top of that it just made everything so much worse and my teachers didn't really know at this point and my friends sort of didn't know I had spoken to them about it but you know it didn't really do much but I do remember I had to say good morning and saying good was really hard for me in that moment and the whole class was there and so I had to stand up and say it and yeah I started on good and I was kind of blocking so nothing was really coming out and I just remember like hearing whispers of like Oh like what's happened like Oh she stuttering and yeah I completely like broke down and I ran outside crying, went to the bathroom. 
+
+                    But my friends were really super supportive, which I really appreciated. And I think that's also why I'm really huge advocate for talking to, even like your closest friends, maybe one or two people about what you're experiencing or your ST and how it affects you at school because it just makes the experience so much better. And I know like having my friends there to guide me and support me in that moment that was really helpful, and so yeah, and after that I spoke to my teacher and she knew then I had a startup and then she was like, you know, there's anything that you need or we can even do the speech afterwards or you could do it again. And yeah, so that was sort of my main experience and that's sort of where it all kind of started and my memorable experience as a stuttering advocate. I feel like it's just sort of every day like I'm getting messages, people saying that like it's so inspiring and all that sort of stuff and I just I don't know I'm not good with the compliments, but I think it's like just seeing how far the pages come and knowing that like I mean. I think I have a lot of plans of where I'm wanting the page to go and it's just, yeah, i think like meeting so many different advocates in the community and yeah, meeting people from like all over the world such as yourself as well. I think just I think the main memorable experience was knowing that like there are so many people in the world at starter and also share really similar experiences. 
+                    
+                    To me and that was probably the most memorable thing because I just felt so much more at ease knowing that it's okay to start out and yeah, and it's just sort of felt creating the page that much better to know that there's a huge community and there's so many other people out there that we can reach that are maybe going through really similar experiences of isolation and feelings of shame and embarrassment because of their startup. And so yeah, i think that's probably the biggest experience for me as of right now. 
+                    
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(5)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>5. Are there any particular initiatives of projects that you've been involved in as like the stuttering advocate?
+                </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                    Oh I was asked to speak on a advocacy panel by the creator of Proud. I'm not sure if you've heard of Proud startoff, but it's by this lady in San Francisco called Mayatroopov and she's a really huge advocate in the community. And yeah, so I've spoken to her and I was on her podcast and she's on my podcast and she asked me if I wanted to be part of a Zoom webinar that she was holding about advocacy and how to get a national starting awareness day going forward. So that was one initiative initiative that I was really excited to be a part of. It was really scary, but it was really exciting to be a part of that. And then also there's this say organization. So in Australia they're not in where I live, but they had come down to do a workshop here, so I was able to participate. 
+
+                    In that which was really cool instead of like, i guess, the organizing side of it, which I haven't done yet. But yeah, that's sort of where it's at right now, but other than that's. I haven't really done. Oh, yeah, i don't know, but I think it's just sort of everything like, yeah, being part of that panel, and even just messaging other podcasters, even not around stuttering, but other podcasts. If I could be on their podcast with other initiatives that I've been a part of, so yeah, i think there's a lot more that we can go with the page. I'm really excited to see how far it can go. So yeah, cool sounds really amazing. How was the like workshop that you joined. 
+                    
+                    It was so cool. So there was a few other Americans like Members of Parliament, so there one Member of Parliament or one member of the what was it called? I don't remember because American political system is very different to here in Australia, but there was another member and they all started. So it was about five or six of us and they were all involved in the creation of the National Starting Awareness Week. So Maya had created one for San Francisco and then was helping other people create ones in their local towns and cities. So she was helping me create one here in Australia. But it's been a lot harder just because it's the system here in Australia is a lot different, but it was really cool to listen to other. 
+                    
+                    People who start off and listen to what they're doing in their local city as well for other people who started up so it was a really cool group to be a part of and I even remember seeing like a few messages after I had spoken in my little segment of people saying that they had actually seen the page and seen the podcast which was really crazy to see. I was like. Oh. I didn't, i didn't actually sort of i don't know un like click that I didn't go on to so many other people, so that was really a really cool experience to be a part of. That sounds amazing. Yeah, you know, like project stars kind of based in Japan, and they think the systems in Japan also maybe sort of limit student advocates and are able to our abilities to reach out to other people. And I think that's kind of sad and I think ye. I hope future generations like us and younger get to like change that and you know give us a bigger voice. And yeah. 
+                     
+                    Absolutely I think it's so important that we have more younger generations be able to voice that because I think for us we have a bit more of a power in order sort of with us because obviously we're young and we have a new voice to share, especially for people who start up because a lot of them and I think it's really important as well for teens to know that there are other teens in the world who start up because you know you can look at movies and TV shows of actors and actresses that have started, but it's always usually they have started and now they don't, so you don't actually see people who currently start off. So that's another thing that I'm really passionate about is like looking at more teen and getting more teaenss involved in trying to change that narrative. And yeah, so I think it will get there ye. 
+                    
+                    
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(6)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>6. What would you say is the most common studying myth or stereotype and what do you believe is the most effective way to like challenge them? </span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                    That's a good question. I probably say the first biggest myth is that stuttering is caused by anxiety, which is not the case as much as you know. Someone who has gone through trauma can lead to stuttering. Anxiety is not that and I think a lot of people I was speaking to my auntie about it and she thought the same thing which is completely not true. Stuttering can lead to anxiety or feelings of anxiety and depression, but it's not caused by vey isn't caused by anxiety, so that's probably the biggest one that you know we can try and challenge. I guess it's that ones sort of hard to challenge, think it's I think the more people that can get on board with debunking myths is probably the biggest way to challenge these ideas. 
+
+                    But yeah, that's probably the biggest one and the other ones include like that, people who start a really shy or dumb again, not the case at all. I think also its there's so much misinformation about stuttering. And so when people always think that people who start a du or can't don't have the same amount of intelligence as a neurotypical person then, but that also then can lead to people feeling shy and embarrassed and know all of these sort of feelings that are attached to stuttering. But it's not the cause of stuttering. So yeah. I think it, it's the more that we talk about the myths and what's stuttering isn't versus what it is, then that's probably the biggest way we can challenge these ideas. 
+                    Definitely yeah you know you mentioned like how you talk to your aunt and that how she believed in the my and I just wanted to ask if theres like how your family members and your friends and they can often feel a certain like type of love but hurt you in a way that's really painful in the way that they didn't really mean it like they were trying to care for you. But they said the wrong thing and then now it's kind of painful. Have you ever experienced that with your stuttering. 
+                    
+                    Yeah. I think I definitely have again there's so I would just probably associate myself as the co person who start up. So you know includes things like feelings so avoiding words and substituting words and all that sort of thing not going out and saying that you have a startup so not advertising a startup that sort of stuff. So I always would get comments from people. So just in general when I would tell a friend that I start they usually the first response is Oh well. I had no idea or you know you talk perfectly fine or you know something. Along those lines, i think the first instinct when someone says they have something is you try and make them feel better about it, so you say they don't have it or that you know they look fine or all that sort of stuff, but I think that can actually be quite harmful. I know that's not the intention, but it can be quite hurtful because then that sort of invalidated my experiences. And I know like my dad would also say the same thing because I think for him it's also like protective instinct to be like. Oh like you're totally fine like you're still strong like you don't have a stu all that sort of that sort of stuff. So yeah, i think that's probably the biggest ones and I've gotten that quite a bit. And yeah, basically all throughout my life of being a person who starters is, that's probably the usual. The first response would it be like. Yeah, that was totally fine like you don't stutter or Oh like I've never heard you start so yeah, those types of comments that I've had from friends and family are probably the most painful. 
+                    
+                    Because then I feel really I don't know what the word to say is, but yeah, it is quite hurtful because yeah, again, it does int validate how it's made me feel. And so yeah, when I don't start her sometimes, then I'll feel like. Oh, like, should I be stuttering more like something's not right? And yeah, it can definitely lead to a lot of internal issues. 
+                    
+                    Right, right it. It's not, you know, people can't like read each other's minds, and so I can't really say or know what the right thing for that person is. That's kind of sad, but I mean. I guess that's the beauty of being human and we get to learn from those mistakes and I'm glad that you can voice that now. And you know, say that that was a painful experience. And not, yeah, so hurtful heart did hurt by it, yeah, definitely. And I think also like the yeah, we just people, they just don't really know what the reaction to be from that is. And so yeah. I think it's the more awareness that we bring about it, the more we can sort of say, or instead of saying this, maybe you can say that ye or something like that. Yeah, yeah. 
+                    
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2" x-data="accordion(7)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span>7. How do you approach public Speaking as a person with a stutter? </span>
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    I definitely avoid them. I don't know if I'm in place right now to do public speaking, but I was actually. I had put myself on to do a radio, to talk on radio, so that was probably the biggest thing that I've ever done. In terms of public speaking, that was really quite terrifying. But I think with public speaking it's just sort of like taking like little steps. It mean. I don't know because I don't do them. I try and stay far away from public speaking. Yeah, spots, op opportunities. But I think yeah. I think it's more just taking little steps into the sort of direction. So U. I. Why don't we know what some tips are? I guess, yeah, just putting yourself into a comfortable position, even if it's even if it's like telling or talking to your family. Or I know for school. At least I would always practice my speeches with my family, so doing presentations with them first and asking teachers if I can tell them just them, not the whole class. So that was like usually the first step that I would take. But yeah. I guess it's doing it. So you don't feel totally uncomfortable because that's just going to sort of take away the experience of public speaking. But if public speaking is something that you're really passionate about, then I would just say Go, go for it. I think the more that people who start just do what they want to do, the less they'll feel embarrassed about it, and it sort of it laid through in the direction of like people who sort of can do it, and we can still do whatever we want to. So yeah. I think that's probably my biggest tip is take more steps. 
+
+                    And yeah. I don't know probably not the best person to ask about it because I just don't do that as a person who doesn't have a steer. I still avoid public speaking because like, yeah, it's very nervewracking. You know, standing in front of so many people, you and those like school presentations that they make you do in like middle school things like that. It's terrifying to think about. Yeah, it's really scary. And I remember like my English teacher, we had to go around in a circle and say like English quotes, so like read Shakespeare. 
+                    Sonnet whatever they're called and like go around and say the quotes and that was really scary, even as a person who doesn't like. As for people who don't start with that would be scary. Like you said so. Yeah. I think yeah, just small steps, yeah, I'll say. 
+                    
+                    I guess talking about Shakespeare, do you have like any favorite book or like show podcasts, etc. Like recommendations for those who want to learn more about stuttering, or a recommendation for those who are struggling to embrace their identity as a person who knowss? Yeah, that's a really good question? Well. I don't read that many books, but there are some really good books about starter out there, so theres I haven't actually read it. But there's a good book called Every Waking Moment. I don't remember who the author was, but he's a person who stutters so that one's really good. There's a children's book called Talking Books. Sorry, that's the offer, her name is Mackenzie. She's a speech pathologist, so she created a children's book called Daniel the Digger SP. Sputters. And that's a really good book. Actually bought it. It's really, really good. So yeah, it's a children's book. So I would definitely recommend that for any parents who want to read to their child who starters or teach their children who don't start about stuttering, that's really good. 
+                    
+                    Shows I don't know that many positive stuttering shows which is a whole issue in itself, but podcasts there's Power Starter she's really, really good, so I definitely recommend PRA Setter. There's @stutterology by Ezra Horak. I feel like I'm saying her last name. They're last name wrong. But U yeah, there's starerology there, a podcast. U there. Yeah, there's a lot of really good. Podcast. Oh. My Stuttering Life is another podcast that's really good. Yeah, there's a whole bunch for that off top of my head. That is probably my top three that I listed to right now. Those are a lot. It thank you. 
+                    
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2" x-data="accordion(8)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span>8. You know you posted on your Instagram a while back that you're going to follow occupational therapy in university and so well, first, congratulations and second, what are some of your goals for the future and plans you have for set of conversation? </span>
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Well, that's a really good question. I'm actually going to be doing a vision board scene, so I'm really trying to manifest my goals the year, but yeah, I'm really excited to occupational therapy, so I'm hoping to be an occupational therapist, so it's a four-e course. There's still a little bit of time to go, but as as with the page. I think it's just more about being of creating bigger awareness or greater awareness. So I'm trying to do more TV appearances which is really scar think about. But I'm trying to do more of those and I'm really passionate about trying to get a TV show or a movie that has a person who studs on there. And it's just a really sort of dodalant thing that is just happens, you know, as life happens, so there are people who have lots of different conditions. So I think it's really, i don't know that the right word, but yeah, just having a person who start on TV and really sharing the experiences of a person who starters but not being made into a drug, or, yeah, any of those myths that we wanted to debunk. And I guess that's actually how you challenge them is to put them out there and say that's wrong. But yeah, so creating a movie or TV show and being part of a project like that is the biggest thing that I think I'm really excited to hopefully do. 
+
+                    But I think yeah. I think I'm really happy with where it's at right now. I didn't expect it to get that much attention that it has been getting and just to yeah, put out the podcast war as well. And yeah, be able to meet a lot more people who start. And yeah, things like that, so there's a few plans. Yeah, that sounds really exciting and I'm also challenging but exciting. Yeah, definitely challenging. Yeah, i' i'd be really happy to see some kind of, you know. TV show, movie that has proper representation and that would be really amazing. Yeah, actually, the other show Im talking about would probably be The king's Speech, which is the Movie Cool i'd say that was the representation because it's about the King George. I don't know what number it is but the King George that had a stutter and it's all about how back in those days they understood stuttering and how they help them. But it sort of shows a bit more of a positive light to starting, which is really rare to see. Yeah. I recommend watching that Cool, cool, thank You. Okay. 
+                    
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2" x-data="accordion(9)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span>9. Lastly, as the meeting and time is coming to close what advice we to give to individuals who are studying or struggling with their stutter. ?
+                </span>
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Yeah I guess it's just knowing that there is a community out there that will support you. So if it's team to soda then it doesn't even have to be putting yourself fully into the community. But know social media is everywhere. So following social media accounts that represent stuttering or yeah reading books or listening to podcast, those are sort of the behind ways. But if you're really wanting to speak to people who start up, then joining Zoom calls. There are a lot of really amazing organizations out there that hold Zoom calls. 
+
+                    You can speak to people who start and that's a really good way to just know that you're not alone which is my other advices to know that you're not alone and that stuttering is okay but it's also okay to have bad days with your st. You don't always have to be know really happy with the start, but I guess it's more just knowing that it does make you unique and everyone's unique in their own way. So yeah, i'd say that's probably be my biggest start. And yeah, just though that there are people out there who are going to support you and you know, speaking to even your parents or talking to teachers about your stamp and your friends because those are all people that will help you when you're at school and you feel like you don't have anyone that you can talk to about it. But yeah, that is probably my biggest tips. 
+                    
+                    Those are some great tips. Yeah, i think social media can be really like double-sided. You know. On one side if you follow those people who don't advocate for those specific things or who misrepresent or talk badly about certain illnesses that can be really detrimental to one's mental health, but on the other side, there's such a big community of people setter who do advocate for stuttering and other mental illnesses and other, you know, health illnesses that many people might not be so aware of. And I think that's sort of the beauty of social media in a sense which yet I would hope stuttering and these things go more mainstream. But as of right now. I think there's already really quite a big community of people who, you know, support each other and love each other online. So I think that's Almaz. Yeah, absolutely, yeah. I think it's finding the positive side to social media. And yeah, looking at the more relatable side because that will really help how you see yourself and see what you're going through as well. 
+                    
+                    
+                  </p>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </body>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('accordion', {
+        tab: 0
+      });
+      
+      Alpine.data('accordion', (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+        }
+      }));
+    })
+  </script>
+    <script src="./static/STAR/js/dropdown.js"></script>
+</body>
+</html>
