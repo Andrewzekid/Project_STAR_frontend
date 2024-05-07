@@ -1,4 +1,4 @@
-![Instagram](https://github.com/Andrewzekid/Project_STAR_frontend/assets/79450923/46175c6c-8828-4bb8-a803-3498b6dc46ac)# Project STAR
+# Project STAR
 Project STAR is an organization founded by one of my classmates to help stuttering youth through dance therapy.
 We have currently hosted:
 * 7 branches
